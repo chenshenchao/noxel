@@ -1,0 +1,30 @@
+{
+  "name": "noxel",
+  "version": "2018.0.0",
+  "description": "Yet a write application.",
+  "author": {
+    "name": "Chen Shen Chao",
+    "email": "chenshenchao@outlook.com",
+    "url": "https://github.com/chenshenchao"
+  },
+  "license": "MIT",
+  "keywords": [
+    "write"
+  ],
+  "main": "main/application.js",
+  "scripts": {
+    "debug": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenshenchao/noxel.git"
+  },
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "sequelize": "^4.38.0",
+    "sqlite3": "^4.0.1"
+  }
+}
