@@ -21,7 +21,7 @@ app.on('ready', () => {
     win.on('closed', () => {
         win = null;
     });
-    win.loadURL(`file://${root}/view/index.html`);
+    win.loadURL(`file://${root}/asset/index.html`);
 });
 
 /**
