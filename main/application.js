@@ -14,6 +14,7 @@ app.on('ready', () => {
         height: 600,
         show: false
     });
+    win.webContents.openDevTools();
     win.setMenu(null);
     win.once('ready-to-show', () => {
         win.show();

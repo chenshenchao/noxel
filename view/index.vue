@@ -1,6 +1,6 @@
 <template>
 <div class="noxel-main">
-
+    <router-link to="/login">Login</router-link>
 </div>
 </template>
 
@@ -8,6 +8,12 @@
 export default {
     data() {
         return {};
+    },
+    methods: {
+
+    },
+    beforeCreate() {
+
     }
 }
 </script>

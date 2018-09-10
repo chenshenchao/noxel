@@ -2,9 +2,16 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
         <title>Noxel</title>
     </head>
     <body>
-        <h1>工作</h1>
+        <div id="application">
+            <keep-alive>
+                <router-view v-if="$route.meta.keepAlive"></router-view>
+            </keep-alive>
+            <router-view v-if="!$route.meta.keepAlive"></router-view>
+        </div>
+        <script charset="utf-8" src="scripts/main.js"></script>
     </body>
 </html>
