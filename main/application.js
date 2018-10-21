@@ -1,5 +1,6 @@
 const path = require('path')
 const electron = require('electron');
+const client = require('electron-connect').client;
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
@@ -23,6 +24,7 @@ app.on('ready', () => {
         win = null;
     });
     win.loadURL(`file://${root}/asset/index.html`);
+    client.create(win);
 });
 
 /**

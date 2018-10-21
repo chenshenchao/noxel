@@ -21,5 +21,6 @@ export default {
 <style lang="scss" scoped>
 .noxel-main {
     overflow: hidden;
+    background: red;
 }
 </style>

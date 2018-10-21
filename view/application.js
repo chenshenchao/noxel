@@ -1,14 +1,14 @@
 import Vue from 'vue/dist/vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
-import Index from './index.vue';
-import Login from './login.vue';
+
+import IndexPage from './page/index.vue';
+import LoginPage from './page/login.vue';
+import DraftPage from './page/draft.vue';
 
 Vue.use(Vuex);
 Vue.use(VueRouter);
 
-Vue.component('index', Index);
-Vue.component('login', Login);
 
 /**
  * 
@@ -26,10 +26,13 @@ let router = new VueRouter({
     routes: [
         {
             path: '/',
-            component: Index,
+            component: IndexPage,
         }, {
             path: '/login',
-            component: Login,
+            component: LoginPage,
+        }, {
+            path: '/draft',
+            component: DraftPage,
         }
     ]
 });
