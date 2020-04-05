@@ -1,1 +1,1 @@
-# [noxel](https://github.com/chenshenchao/noxel)
+# [Noxel](https://github.com/chenshenchao/noxel)
