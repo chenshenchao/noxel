@@ -1,5 +1,5 @@
+/build/
 /dist_electron/
 /node_modules/
-/*lock*
 /.npmrc
 /archive.db
