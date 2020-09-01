@@ -1,5 +1,6 @@
 /build/
+/dist/
 /dist_electron/
 /node_modules/
 /.npmrc
-/archive.db
+/*.db
