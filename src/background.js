@@ -3,6 +3,7 @@
 import {
   app,
   protocol,
+  ipcMain,
   BrowserWindow
 } from 'electron';
 
@@ -10,6 +11,10 @@ import {
   createProtocol,
   installVueDevtools
 } from 'vue-cli-plugin-electron-builder/lib';
+
+import filesystem from './processes/filesystem';
+
+filesystem(ipcMain);
 
 const isDevelopment = process.env.NODE_ENV !== 'production'
 

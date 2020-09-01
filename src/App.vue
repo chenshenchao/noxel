@@ -1,20 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png" />
-    <div>
-      <p>
-        If Element is successfully added to this project, you'll see an
-        <code v-text="'<el-button>'"></code>
-        below
-      </p>
-      <el-button>{{version}}</el-button>
-    </div>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Vue from "vue";
-import { Component, Prop, Provide } from "vue-property-decorator";
+import { Vue, Component, Prop, Provide } from "vue-property-decorator";
 
 @Component()
 class App extends Vue {
@@ -25,7 +16,7 @@ class App extends Vue {
   version;
 
   created() {
-    console.log(this.app);
+    
   }
 }
 

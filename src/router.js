@@ -9,7 +9,7 @@ const router = new Router({
   routes: [{
     path: '/',
     name: 'home',
-    component: () => import('@/views/About.vue')
+    component: () => import('@/views/Audio.vue')
   },
   {
     path: '/about',
